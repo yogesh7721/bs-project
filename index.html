@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+</head>
+
+<body>
+    <div class="collapse" id="search">
+        <div class="alert alert-primary mb-0">
+            <div class="container">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Username">
+                    <button type="button" class="btn btn-primary">Serch</button>
+                </div>
+                <h4>Popular Serch</h4>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                        <a class="d-block my-2" href="">Fake link</a>
+                    </div>
+                    <div class="col-sm-6">
+                        .<div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img class="img-fluid"
+                                            src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5>Feature Product</h5>
+                                        <P>Lorem Ipsum</P>
+                                        <button type="button" class="btn btn-outline-primary">Shop Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#search">Toggle</button> -->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button data-bs-toggle="collapse" data-bs-target="#search" type="button"
+                    class="btn btn-outline-light"><i class="bi bi-search"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                    <bi class="bi bi-cart"></bi>
+                </button>
+                <button data-bs-toggle="offcanvas" data-bs-target="#login" type="button" class="btn btn-outline-light">
+                    Login</button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- offcanvas start -->
+    <div class=" offcanvas offcanvas-end" id="login">
+        <div class="offcanvas-header bg-primary">Login</div>
+        <div class="offcanvas-body">
+            <label for="">Enter Email</label>
+            <input type="text" class="form-control my-2" placeholder="john@gmail.com">
+            <label for="">Enter Password</label>
+            <input type="text" class="form-control my-2" placeholder="Secure Password">
+            <button type="button" class="btn btn-primary">Login</button>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- new offcanvas start -->
+
+
+    <div class="offcanvas offcanvas-end" id="cart">
+        <div class="offcanvas-header bg-primary">
+            <h5 class="offcanvas-title " id="offcanvasExampleLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class=" alert alert-primary ">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="img-fluid"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>Dell XPS 13 Pro</h4>
+                            <p>Lorem ipsum dolar sit amet</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Rs 9,999</h5>
+                        </div>
+                    </div>
+                    <p class="text-success">You Have saved Rs 14,775 /- in this order</p>
+                    <div class="btn-group ">
+                        <button class="btn btn-outline-danger">left</button>
+                        <button class="btn btn-outline-primary">Middle</button>
+                        <button class="btn btn-outline-success">Right</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="img-fluid"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>Dell XPS 13 Pro</h4>
+                            <p>Lorem ipsum dolar sit amet</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Rs 9,999</h5>
+                        </div>
+                    </div>
+                    <p class="text-success">You Have saved Rs 14,775 /- in this order</p>
+                    <div class="btn-group ">
+                        <button class="btn btn-outline-danger">left</button>
+                        <button class="btn btn-outline-primary">Middle</button>
+                        <button class="btn btn-outline-success">Right</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container">
+                    <p data-bs-toggle="collapse" data-bs-target="#coupon">I have Coupon</p>
+                    <div class=" collapse input-group input-group-lg" id="coupon">
+                        <input type="text" class="form-control" placeholder="Username">
+                        <button type="button" class="btn btn-primary">Serch</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- new offcanvas end -->
+
+    <!-- carousel start -->
+    <div class="carousel slide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class=" d-flex my-5">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                alt="">
+                            <div>
+                                <h3>Dell XPS Pro</h3>
+                                <p>Lorem ipsum dolar sir</p>
+                                <button type="button" class="btn btn-primary btn-sm">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <div class=" d-flex my-5 ">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                alt="">
+                            <div class="p-lg-5">
+                                <h3>Dell XPS Pro</h3>
+                                <p>Lorem ipsum dolar sir</p>
+                                <button type="button" class="btn btn-primary btn-sm">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+                <div class="carousel-item">
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- carousel end -->
+
+    <!-- feature start -->
+    <div class="bg-primary p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm 4">
+                    <div class="d-flex text-light gap-5">
+                        <i class="bi bi-truck fs-1"></i>
+                        <div>
+                            <h6>Fast Delivery</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm 4">
+                    <div class="d-flex text-light gap-5">
+                        <i class="bi bi-truck fs-1"></i>
+                        <div>
+                            <h6>Fast Delivery</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm 4">
+                    <div class="d-flex text-light gap-5">
+                        <i class="bi bi-truck  fs-1"></i>
+                        <div>
+                            <h6>Fast Delivery</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature end -->
+
+    <!-- popular start -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-4 ">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                                <hr>
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between alert alert-primary">
+                            <strong>Dell XPS</strong>
+                            <P>Starting 99,999</P>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-4 ">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                                <hr>
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between alert alert-primary">
+                            <strong>Dell XPS</strong>
+                            <P>Starting 99,999</P>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-4 ">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                                <hr>
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFwdG9wJTIwaW1nfGVufDB8fDB8fHww"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between alert alert-primary">
+                            <strong>Dell XPS</strong>
+                            <P>Starting 99,999</P>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular end -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
